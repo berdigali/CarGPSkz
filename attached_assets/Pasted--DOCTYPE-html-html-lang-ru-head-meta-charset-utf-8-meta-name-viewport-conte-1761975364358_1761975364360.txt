@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GPS трекеры в Казахстане – Мониторинг транспорта от CarGPS.kz</title>
+  <meta name="description" content="Установка и обслуживание GPS трекеров для авто, грузовиков и спецтехники по всему Казахстану. Онлайн-контроль, отчёты, геозоны и экономия топлива. Тарифы от 2000 ₸/мес." />
+  <link rel="canonical" href="https://cargps.kz/" />
+  <!-- Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="CarGPS.kz — GPS мониторинг транспорта в Казахстане" />
+  <meta property="og:description" content="Онлайн слежение за авто и автопарком. Трекер GS900 + тарифы от 2000 ₸/мес." />
+  <meta property="og:url" content="https://cargps.kz/" />
+  <meta property="og:image" content="https://cargps.kz/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CarGPS.kz — GPS мониторинг транспорта" />
+  <meta name="twitter:description" content="Надёжные трекеры и сервис по всей РК. Тарифы от 2000 ₸/мес." />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    :root{--bg:#0e1117;--card:#161a22;--text:#e6e8ec;--muted:#9aa3b2;--brand:#4da3ff;--ok:#12c48b;}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);}
+    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{font-weight:700;font-size:20px}
+    .lang{display:flex;gap:8px}
+    .lang button{background:var(--card);border:1px solid #252b36;color:var(--text);padding:6px 10px;border-radius:10px;cursor:pointer}
+    .lang button.active{border-color:var(--brand)}
+    .hero{display:grid;gap:18px;padding:28px;background:linear-gradient(180deg,rgba(77,163,255,.12),transparent);border:1px solid #242a35;border-radius:18px}
+    .h1{font-size:34px;line-height:1.15;margin:0}
+    .sub{color:var(--muted);margin:0}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+    .btn{background:var(--brand);color:#081018;border:none;padding:12px 16px;border-radius:12px;font-weight:600;cursor:pointer}
+    .btn.alt{background:var(--card);color:var(--text);border:1px solid #2a3140}
+    .grid{display:grid;gap:16px;margin-top:26px}
+    @media(min-width:900px){.grid.cols-3{grid-template-columns:repeat(3,1fr)} .grid.cols-2{grid-template-columns:repeat(2,1fr)}}
+    .card{background:var(--card);border:1px solid #232935;border-radius:16px;padding:18px}
+    .kpi{font-size:28px;font-weight:800;color:var(--ok)}
+    h2{margin:0 0 10px 0;font-size:24px}
+    h3{margin:0 0 8px 0;font-size:18px}
+    .muted{color:var(--muted)}
+    footer{margin:40px 0 20px;color:var(--muted);font-size:14px}
+    /* bilingual blocks */
+    [data-i18n]{display:none}
+    .ru [data-i18n="ru"], .kk [data-i18n="kk"]{display:block}
+    nav a{margin-right:16px;color:var(--muted)}
+    .pill{display:inline-block;background:#0f1420;border:1px solid #283247;color:var(--muted);padding:4px 10px;border-radius:999px;font-size:12px;margin-right:8px}
+    .price{font-size:22px;font-weight:700}
+    .tag{font-size:12px;border:1px solid #2a3140;padding:2px 8px;border-radius:999px;margin-left:6px;color:var(--muted)}
+  </style>
+
+  <!-- JSON-LD Organization + Product + Service -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"CarGPS.kz",
+    "url":"https://cargps.kz",
+    "logo":"https://cargps.kz/logo.png",
+    "telephone":"+7 777 777 8464",
+    "sameAs":[]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"WanWay GS900 GPS трекер",
+    "brand":{"@type":"Brand","name":"WanWay"},
+    "category":"Electronics",
+    "url":"https://cargps.kz/",
+    "offers":{
+      "@type":"Offer",
+      "priceCurrency":"KZT",
+      "price":"15000",
+      "availability":"https://schema.org/InStock"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"Сервис GPS мониторинга транспорта",
+    "provider":{"@type":"Organization","name":"CarGPS.kz"},
+    "areaServed":"KZ",
+    "offers":{"@type":"Offer","priceCurrency":"KZT","price":"2000","priceSpecification":{"@type":"UnitPriceSpecification","price":"2000","priceCurrency":"KZT","unitText":"month"}}
+  }
+  </script>
+</head>
+<body class="ru">
+  <div class="wrap">
+    <header>
+      <div class="brand">CarGPS.kz <span class="tag">GS900</span><span class="tag">₂₀₀₀ ₸/мес</span></div>
+      <nav>
+        <a href="#benefits">Преимущества</a>
+        <a href="#devices">Устройства</a>
+        <a href="#pricing">Тарифы</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <div class="lang">
+        <button id="btn-ru" class="active">RU</button>
+        <button id="btn-kk">KZ</button>
+      </div>
+    </header>
+
+    <!-- HERO RU -->
+    <section class="hero" data-i18n="ru">
+      <h1 class="h1">GPS трекер в Казахстане — мониторинг транспорта от CarGPS.kz</h1>
+      <p class="sub">Надёжный контроль авто и автопарков: трекер <b>GS900</b> + онлайн-сервис. Установка за 1 день. Тарифы от <b>2000 ₸/мес</b>.</p>
+      <div class="cta">
+        <a class="btn" href="https://wa.me/77777778464?text=Здравствуйте!%20Хочу%20подключить%20GPS%20трекер%20CarGPS.kz">Написать в WhatsApp</a>
+        <a class="btn alt" href="#pricing">Смотреть тарифы</a>
+      </div>
+      <div>
+        <span class="pill">Онлайн-карта</span>
+        <span class="pill">История поездок</span>
+        <span class="pill">Геозоны и уведомления</span>
+        <span class="pill">Экономия топлива</span>
+      </div>
+    </section>
+
+    <!-- HERO KZ -->
+    <section class="hero" data-i18n="kk">
+      <h1 class="h1">Қазақстандағы GPS трекер — CarGPS.kz көлік мониторингі</h1>
+      <p class="sub">Сенімді бақылау: <b>GS900</b> трекері + онлайн сервис. Орнату — 1 күн. Тарифтер <b>айына 2000 ₸</b>-ден.</p>
+      <div class="cta">
+        <a class="btn" href="https://wa.me/77777778464?text=Сәлеметсіз%20бе!%20CarGPS.kz%20GPS%20трекерін%20қосқым%20келеді">WhatsApp жазу</a>
+        <a class="btn alt" href="#pricing">Тарифтерді көру</a>
+      </div>
+      <div>
+        <span class="pill">Онлайн карта</span>
+        <span class="pill">Сапар тарихы</span>
+        <span class="pill">Геоаймақ ескертулері</span>
+        <span class="pill">Жанармай үнемі</span>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section id="benefits" class="grid cols-3">
+      <div class="card" data-i18n="ru">
+        <h3>1. Простая установка</h3>
+        <p class="muted">Подключим трекер к питанию авто, проверим сигнал и выдадим доступ в личный кабинет.</p>
+      </div>
+      <div class="card" data-i18n="kk">
+        <h3>1. Оңай орнату</h3>
+        <p class="muted">Трекерді автокөлікке қосып, сигналды тексереміз және жеке кабинетке қолжеткізу береміз.</p>
+      </div>
+      <div class="card" data-i18n="ru">
+        <h3>2. Контроль и отчёты</h3>
+        <p class="muted">Маршруты, пробег, стоянки, превышение скорости, уведомления по геозонам.</p>
+      </div>
+      <div class="card" data-i18n="kk">
+        <h3>2. Бақылау және есептер</h3>
+        <p class="muted">Маршруттар, жүріс қоры, тоқтаулар, жылдамдық, геоаймақ хабарламалары.</p>
+      </div>
+      <div class="card" data-i18n="ru">
+        <h3>3. Экономия</h3>
+        <p class="muted">Сократите холостые пробеги и повысите дисциплину водителей.</p>
+      </div>
+      <div class="card" data-i18n="kk">
+        <h3>3. Үнем</h3>
+        <p class="muted">Бос жүрісті азайтып, жүргізуші тәртібін жақсартады.</p>
+      </div>
+    </section>
+
+    <!-- DEVICES -->
+    <section id="devices" class="grid cols-2">
+      <div class="card" data-i18n="ru">
+        <h2>GPS трекер GS900</h2>
+        <p class="muted">Компактный и надёжный. Поддержка 4G, точность позиционирования, датчики зажигания/движения.</p>
+        <p><span class="price">15 000 ₸</span> разово <span class="tag">установка по запросу</span></p>
+        <ul class="muted">
+          <li>История маршрутов и стоянок</li>
+          <li>Уведомления в WhatsApp/Telegram</li>
+          <li>Поддержка легковых, грузовых и спецтехники</li>
+        </ul>
+      </div>
+      <div class="card" data-i18n="kk">
+        <h2>GS900 GPS трекері</h2>
+        <p class="muted">Ықты және сенімді. 4G қолдауы, дәл позиция, тұтану/қозғалыс датчиктері.</p>
+        <p><span class="price">15 000 ₸</span> бір реттік <span class="tag">орнату — сұрау бойынша</span></p>
+        <ul class="muted">
+          <li>Маршрут және тоқтау тарихы</li>
+          <li>WhatsApp/Telegram ескертулері</li>
+          <li>Жеңіл, жүк, арнайы техникаға жарамды</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- STEPS -->
+    <section class="grid cols-3">
+      <div class="card" data-i18n="ru">
+        <h3>Шаг 1 — Заявка</h3>
+        <p class="muted">Напишите нам в WhatsApp, договоримся о дате установки.</p>
+      </div>
+      <div class="card" data-i18n="kk">
+        <h3>1-қадам — Өтінім</h3>
+        <p class="muted">WhatsApp арқылы жазыңыз — орнату күнін белгілейміз.</p>
+      </div>
+      <div class="card" data-i18n="ru">
+        <h3>Шаг 2 — Установка</h3>
+        <p class="muted">Монтаж трекера и проверка связи — ~40 минут.</p>
+      </div>
+      <div class="card" data-i18n="kk">
+        <h3>2-қадам — Орнату</h3>
+        <p class="muted">Трекерді орнатып, байланысын тексереміз — ~40 минут.</p>
+      </div>
+      <div class="card" data-i18n="ru">
+        <h3>Шаг 3 — Доступ</h3>
+        <p class="muted">Вы получаете логин и начинаете контролировать транспорт.</p>
+      </div>
+      <div class="card" data-i18n="kk">
+        <h3>3-қадам — Қол жеткізу</h3>
+        <p class="muted">Жеке кабинетке кіріп, көлікті бақылайсыз.</p>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="grid cols-2">
+      <div class="card" data-i18n="ru">
+        <h2>Тарифы CarGPS</h2>
+        <p class="price">от 2000 ₸/мес</p>
+        <ul class="muted">
+          <li>Онлайн-карта + история 6–12 месяцев</li>
+          <li>Уведомления: скорость, геозоны, питание</li>
+          <li>Поддержка 7 дней в неделю</li>
+        </ul>
+        <a class="btn" href="https://wa.me/77777778464?text=Хочу%20подключить%20тариф%20CarGPS">Подключить</a>
+      </div>
+      <div class="card" data-i18n="kk">
+        <h2>CarGPS тарифтері</h2>
+        <p class="price">айына 2000 ₸-ден</p>
+        <ul class="muted">
+          <li>Онлайн карта + 6–12 ай тарих</li>
+          <li>Ескертулер: жылдамдық, геоаймақ, қорек</li>
+          <li>Қолдау аптасына 7 күн</li>
+        </ul>
+        <a class="btn" href="https://wa.me/77777778464?text=CarGPS%20тарифін%20қосуды%20қалаймын">Қосу</a>
+      </div>
+    </section>
+
+    <!-- BUSINESS / PERSONAL -->
+    <section class="grid cols-2">
+      <div class="card" data-i18n="ru">
+        <h2>Для бизнеса</h2>
+        <p class="muted">Логистика, такси и корпоративный автопарк: маршруты, пробег, дисциплина водителей, экспорт отчетов.</p>
+        <a class="btn alt" href="#contact">Запросить демо</a>
+      </div>
+      <div class="card" data-i18n="kk">
+        <h2>Бизнеске</h2>
+        <p class="muted">Логистика, такси, корпоратив автопарк: маршруттар, жүріс, жүргізуші тәртібі, есеп экспорттары.</p>
+        <a class="btn alt" href="#contact">Демонстрация сұрау</a>
+      </div>
+      <div class="card" data-i18n="ru">
+        <h2>Для частных клиентов</h2>
+        <p class="muted">Контроль автомобиля и душевное спокойствие: где машина сейчас и как она двигалась.</p>
+      </div>
+      <div class="card" data-i18n="kk">
+        <h2>Жеке клиенттерге</h2>
+        <p class="muted">Көлігіңізді бақылаңыз: қазір қайда және қалай жүргенін біліңіз.</p>
+      </div>
+    </section>
+
+    <!-- INSTALL / SUPPORT -->
+    <section class="grid cols-2">
+      <div class="card" data-i18n="ru">
+        <h2>Установка и поддержка</h2>
+        <p class="muted">Работаем по всей РК. Установка в тот же день, если есть окно. Консультация и помощь в WhatsApp.</p>
+      </div>
+      <div class="card" data-i18n="kk">
+        <h2>Орнату және қолдау</h2>
+        <p class="muted">Қазақстан бойынша жұмыс істейміз. Бос уақыт болса, сол күні орнатамыз. WhatsApp арқылы кеңес және көмек.</p>
+      </div>
+    </section>
+
+    <!-- BLOG TEASER -->
+    <section class="grid cols-3">
+      <div class="card" data-i18n="ru">
+        <h3>Блог: Как выбрать GPS трекер?</h3>
+        <p class="muted">GS900 vs GT06N: на что смотреть при покупке.</p>
+      </div>
+      <div class="card" data-i18n="kk">
+        <h3>Блог: GPS трекерді қалай таңдау керек?</h3>
+        <p class="muted">GS900 және GT06N салыстыру.</p>
+      </div>
+      <div class="card" data-i18n="ru">
+        <h3>Кейс: Экономия топлива</h3>
+        <p class="muted">Как мониторинг снизил холостой пробег на 18%.</p>
+      </div>
+      <div class="card" data-i18n="kk">
+        <h3>Кейс: Жанармай үнемі</h3>
+        <p class="muted">Мониторинг бос жүрісті 18% азайтты.</p>
+      </div>
+      <div class="card" data-i18n="ru">
+        <h3>Гайд: Геозоны</h3>
+        <p class="muted">Уведомления о въезде/выезде для безопасности.</p>
+      </div>
+      <div class="card" data-i18n="kk">
+        <h3>Нұсқаулық: Геоаймақтар</h3>
+        <p class="muted">Кіру/шығу туралы ескертулерді баптау.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card">
+      <div data-i18n="ru">
+        <h2>Свяжитесь с CarGPS.kz</h2>
+        <p class="muted">Задайте вопрос или закажите установку — ответим быстро.</p>
+        <p><b>WhatsApp:</b> <a href="https://wa.me/77777778464">+7 777 777 8464</a> &nbsp; • &nbsp; <b>Email:</b> <a href="mailto:info@cargps.kz">info@cargps.kz</a></p>
+      </div>
+      <div data-i18n="kk">
+        <h2>CarGPS.kz-пен байланыс</h2>
+        <p class="muted">Сұрақ қойыңыз немесе орнатуға тапсырыс беріңіз — тез жауап береміз.</p>
+        <p><b>WhatsApp:</b> <a href="https://wa.me/77777778464">+7 777 777 8464</a> &nbsp; • &nbsp; <b>Email:</b> <a href="mailto:info@cargps.kz">info@cargps.kz</a></p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> CarGPS.kz — GPS мониторинг транспорта в Казахстане
+    </footer>
+  </div>
+
+  <script>
+    // year
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // language toggle
+    const root = document.body;
+    const ruBtn = document.getElementById('btn-ru');
+    const kkBtn = document.getElementById('btn-kk');
+
+    function setLang(lang){
+      root.classList.remove('ru','kk');
+      root.classList.add(lang);
+      ruBtn.classList.toggle('active', lang==='ru');
+      kkBtn.classList.toggle('active', lang==='kk');
+
+      // Update SEO title/description dynamically (helps for social shares while one-page)
+      if(lang==='ru'){
+        document.title = 'GPS трекеры в Казахстане – Мониторинг транспорта от CarGPS.kz';
+        const md = document.querySelector('meta[name="description"]');
+        if(md) md.setAttribute('content','Установка и обслуживание GPS трекеров для авто, грузовиков и спецтехники по всему Казахстану. Онлайн-контроль, отчёты, геозоны и экономия топлива. Тарифы от 2000 ₸/мес.');
+      } else {
+        document.title = 'Қазақстандағы GPS трекер – CarGPS.kz көлік мониторингі';
+        const md = document.querySelector('meta[name="description"]');
+        if(md) md.setAttribute('content','Қазақстан бойынша GPS трекер орнату және қызмет. Онлайн бақылау, есептер, геоаймақ ескертулері. Тарифтер айына 2000 ₸-ден.');
+      }
+    }
+    ruBtn.onclick=()=>setLang('ru');
+    kkBtn.onclick=()=>setLang('kk');
+  </script>
+</body>
+</html>
