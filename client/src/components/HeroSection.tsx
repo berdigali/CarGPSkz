@@ -39,8 +39,8 @@ export default function HeroSection() {
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6" data-testid="text-hero-title">
             {t(
-              'GPS трекер в Казахстане — мониторинг транспорта от CarGPS.kz',
-              'Қазақстандағы GPS трекер — CarGPS.kz көлік мониторингі'
+              '4G GPS трекер в Казахстане — мониторинг транспорта от CarGPS.kz',
+              '4G GPS трекер Қазақстанда — CarGPS.kz көлік мониторингі'
             )}
           </h1>
 
