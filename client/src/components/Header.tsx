@@ -14,15 +14,15 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="max-w-7xl mx-auto px-6 py-4">
-        <div className="flex items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <span className="text-xl font-bold" data-testid="brand-name">CarGPS.kz</span>
-            <Badge variant="outline" className="text-xs" data-testid="badge-device">GS900</Badge>
-            <Badge variant="outline" className="text-xs" data-testid="badge-price">2000 ₸/мес</Badge>
+      <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4">
+        <div className="flex items-center justify-between gap-2 md:gap-4">
+          <div className="flex items-center gap-1 md:gap-2">
+            <span className="text-lg md:text-xl font-bold" data-testid="brand-name">CarGPS.kz</span>
+            <Badge variant="outline" className="text-xs hidden sm:inline-flex" data-testid="badge-device">GS900</Badge>
+            <Badge variant="outline" className="text-xs hidden lg:inline-flex" data-testid="badge-price">2000 ₸/мес</Badge>
           </div>
 
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden lg:flex items-center gap-6">
             <button
               onClick={() => scrollToSection('benefits')}
               className="text-sm text-muted-foreground hover-elevate hover:text-foreground transition-colors"
@@ -53,12 +53,12 @@ export default function Header() {
             </button>
           </nav>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1 md:gap-2">
             <Button
               variant={language === 'ru' ? 'default' : 'outline'}
               size="sm"
               onClick={() => setLanguage('ru')}
-              className="min-w-12"
+              className="min-w-10 md:min-w-12 text-xs md:text-sm px-2 md:px-3"
               data-testid="button-lang-ru"
             >
               RU
@@ -67,7 +67,7 @@ export default function Header() {
               variant={language === 'kk' ? 'default' : 'outline'}
               size="sm"
               onClick={() => setLanguage('kk')}
-              className="min-w-12"
+              className="min-w-10 md:min-w-12 text-xs md:text-sm px-2 md:px-3"
               data-testid="button-lang-kk"
             >
               KZ

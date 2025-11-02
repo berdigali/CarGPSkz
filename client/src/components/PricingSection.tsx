@@ -23,9 +23,9 @@ export default function PricingSection() {
   ];
 
   return (
-    <section id="pricing" className="py-20 bg-background">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-12">
+    <section id="pricing" className="py-12 md:py-20 bg-background">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="text-3xl font-bold mb-4" data-testid="text-pricing-title">
             {t('Тарифы CarGPS', 'CarGPS тарифтері')}
           </h2>

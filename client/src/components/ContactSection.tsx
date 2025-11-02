@@ -27,9 +27,9 @@ export default function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-muted/30">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-12">
+    <section id="contact" className="py-12 md:py-20 bg-muted/30">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="text-3xl font-bold mb-4" data-testid="text-contact-title">
             {t('Свяжитесь с нами', 'Бізбен байланысыңыз')}
           </h2>

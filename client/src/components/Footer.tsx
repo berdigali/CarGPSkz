@@ -5,8 +5,8 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-border bg-background">
-      <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 py-8 md:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 mb-6 md:mb-8">
           <div>
             <h3 className="font-bold mb-4" data-testid="text-footer-about">
               {t('О нас', 'Біз туралы')}
