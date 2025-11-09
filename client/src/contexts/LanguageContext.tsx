@@ -1,4 +1,5 @@
-import { createContext, useContext, useState, ReactNode } from 'react';
+import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { useLocation } from 'wouter';
 
 type Language = 'ru' | 'kk';
 
@@ -10,13 +11,51 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
+function getInitialLanguage(): Language {
+  // Check if language is set in HTML via window.__LANG__
+  if (typeof window !== 'undefined' && (window as any).__LANG__) {
+    return (window as any).__LANG__ as Language;
+  }
+  
+  // Fallback to URL detection
+  const path = window.location.pathname;
+  if (path.startsWith('/kk')) return 'kk';
+  if (path.startsWith('/ru')) return 'ru';
+  
+  // Default to Russian
+  return 'ru';
+}
+
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>('ru');
+  const [language, setLanguage] = useState<Language>(getInitialLanguage);
+  const [location, setLocation] = useLocation();
+
+  // Update HTML lang attribute when language changes
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
+
+  // Update language when URL changes
+  useEffect(() => {
+    const path = location;
+    if (path.startsWith('/kk') && language !== 'kk') {
+      setLanguage('kk');
+    } else if (path.startsWith('/ru') && language !== 'ru') {
+      setLanguage('ru');
+    }
+  }, [location, language]);
+
+  // Override setLanguage to also change URL
+  const setLanguageWithNav = (lang: Language) => {
+    setLanguage(lang);
+    const hash = window.location.hash;
+    setLocation(`/${lang}${hash}`);
+  };
 
   const t = (ru: string, kk: string) => (language === 'ru' ? ru : kk);
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage: setLanguageWithNav, t }}>
       {children}
     </LanguageContext.Provider>
   );

@@ -22,6 +22,9 @@ export default function DeviceSection() {
               src={deviceImage}
               alt="GS900 GPS Tracker"
               className="w-full rounded-lg"
+              loading="lazy"
+              width="1024"
+              height="1024"
               data-testid="img-device"
             />
           </div>
