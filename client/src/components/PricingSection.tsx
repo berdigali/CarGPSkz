@@ -8,8 +8,8 @@ export default function PricingSection() {
 
   const whatsappNumber = '77782589661';
   const whatsappMessage = t(
-    'Здравствуйте! Хочу узнать подробнее о тарифах CarGPS.kz',
-    'Сәлеметсіз бе! CarGPS.kz тарифтері туралы толығырақ білгім келеді'
+    '[Заявка с сайта cargps.kz] Здравствуйте! Хочу узнать подробнее о тарифах',
+    '[cargps.kz сайтынан өтінім] Сәлеметсіз бе! Тарифтер туралы толығырақ білгім келеді'
   );
 
   const handleWhatsAppClick = () => {

@@ -7,8 +7,8 @@ export default function WhatsAppButton() {
 
   const whatsappNumber = '77782589661';
   const whatsappMessage = t(
-    'Здравствуйте! Хочу подключить GPS трекер CarGPS.kz',
-    'Сәлеметсіз бе! CarGPS.kz GPS трекерін қосқым келеді'
+    '[Заявка с сайта cargps.kz] Здравствуйте! Хочу подключить GPS трекер',
+    '[cargps.kz сайтынан өтінім] Сәлеметсіз бе! GPS трекерін қосқым келеді'
   );
 
   const handleClick = () => {
