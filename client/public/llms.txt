@@ -1,0 +1,56 @@
+# CarGPS.kz — GPS Fleet Tracking in Kazakhstan
+
+## About
+CarGPS.kz provides 4G GPS tracker installation and fleet monitoring services across Kazakhstan. We serve individuals, businesses, and fleet operators with real-time vehicle tracking, fuel monitoring, geofencing, and WhatsApp/Telegram notifications.
+
+## Key Facts
+- Company: CarGPS.kz
+- Country: Kazakhstan
+- Languages: Russian, Kazakh
+- Phone: +7 778 258 9661
+- Email: info@cargps.kz
+- WhatsApp: https://wa.me/77782589661
+- GPS Platform: https://gps.cargps.kz
+- Online Store: https://shop.cargps.kz
+
+## Products & Pricing
+- GS900 4G GPS Tracker: 15,000 KZT (one-time purchase, no rental)
+- Monthly monitoring subscription: 2,000 KZT/month
+- Includes: monitoring platform, mobile app, WhatsApp/Telegram alerts, reports, geofences
+
+## Services
+- GPS tracker installation (30 minutes)
+- Fleet monitoring (real-time tracking, route history, speed control)
+- Fuel monitoring and theft detection
+- Geofencing with instant alerts
+- Monthly reports and analytics
+
+## Coverage
+- All regions of Kazakhstan
+- 4G network coverage
+- Accuracy: up to 2 meters
+
+## FAQ
+Q: How much does a GPS tracker cost in Kazakhstan?
+A: The GS900 4G GPS tracker costs 15,000 KZT as a one-time purchase. Monthly monitoring is 2,000 KZT/month.
+
+Q: How long does GPS tracker installation take?
+A: Installation takes approximately 30 minutes.
+
+Q: What notifications do I get?
+A: You receive real-time alerts via WhatsApp and Telegram for geofence entry/exit, speed violations, and other events.
+
+Q: Does it work across all of Kazakhstan?
+A: Yes, the 4G tracker works across all regions of Kazakhstan with cellular coverage.
+
+Q: Can I monitor fuel consumption?
+A: Yes, the system tracks fuel levels and can detect fuel theft or unauthorized refueling.
+
+Q: Is there a mobile app?
+A: Yes, you can monitor your vehicles from any device — phone, tablet, or computer.
+
+## Pages
+- Main (Russian): https://cargps.kz/
+- Russian: https://cargps.kz/ru.html
+- Kazakh: https://cargps.kz/kk.html
+- Shop: https://shop.cargps.kz
