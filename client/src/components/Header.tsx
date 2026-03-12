@@ -55,6 +55,17 @@ export default function Header() {
 
           <div className="flex items-center gap-1 md:gap-2">
             <Button
+              asChild
+              variant="outline"
+              size="sm"
+              className="text-xs md:text-sm px-2 md:px-3 border-green-500 text-green-600 hover:bg-green-50 dark:hover:bg-green-950"
+              data-testid="button-demo"
+            >
+              <a href="https://gps.cargps.kz" target="_blank" rel="noopener noreferrer">
+                {t('Демо', 'Демо')}
+              </a>
+            </Button>
+            <Button
               variant={language === 'ru' ? 'default' : 'outline'}
               size="sm"
               onClick={() => setLanguage('ru')}

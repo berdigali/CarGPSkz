@@ -1,7 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { MessageCircle } from 'lucide-react';
+import { MessageCircle, Monitor } from 'lucide-react';
 import heroImage from '@assets/generated_images/GPS_tracker_in_car_dashboard_3e8c6fc0.png';
 
 export default function HeroSection() {
@@ -69,6 +69,18 @@ export default function HeroSection() {
               data-testid="button-view-pricing"
             >
               {t('Смотреть тарифы', 'Тарифтерді көру')}
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="w-full sm:w-auto border-blue-500 text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-950"
+              data-testid="button-demo"
+            >
+              <a href="https://gps.cargps.kz" target="_blank" rel="noopener noreferrer">
+                <Monitor className="w-5 h-5 mr-2" />
+                {t('Демо — cargpsdemo / cargpsdemo', 'Демо — cargpsdemo / cargpsdemo')}
+              </a>
             </Button>
           </div>
 
