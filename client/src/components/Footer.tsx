@@ -1,4 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import { Instagram, Linkedin } from 'lucide-react';
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -57,6 +58,26 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
+          <div className="flex items-center justify-center gap-4 mb-4">
+            <a
+              href="https://www.instagram.com/cargps.kz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="Instagram"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/112458952/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="w-5 h-5" />
+            </a>
+          </div>
           <p data-testid="text-copyright">
             © 2025 CarGPS.kz. {t('Все права защищены.', 'Барлық құқықтар қорғалған.')}
           </p>
