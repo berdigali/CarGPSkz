@@ -88,7 +88,7 @@ export default function Footer() {
             </a>
           </div>
           <p data-testid="text-copyright">
-            © 2025 CarGPS.kz. {t('Все права защищены.', 'Барлық құқықтар қорғалған.')}
+            © 2012–2026 CarGPS.kz. {t('Все права защищены.', 'Барлық құқықтар қорғалған.')}
           </p>
         </div>
       </div>
