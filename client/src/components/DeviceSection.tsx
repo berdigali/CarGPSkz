@@ -1,8 +1,9 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Card } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Check } from 'lucide-react';
-import deviceImage from '@assets/generated_images/GS900_GPS_tracker_product_shot_06634983.png';
+import { Check, ShoppingCart } from 'lucide-react';
+import deviceImage from '@assets/gs900_new.png';
 
 export default function DeviceSection() {
   const { t } = useLanguage();
@@ -51,7 +52,7 @@ export default function DeviceSection() {
               </Badge>
             </div>
 
-            <ul className="space-y-3">
+            <ul className="space-y-3 mb-6">
               {features.map((feature, index) => (
                 <li key={index} className="flex items-start gap-2" data-testid={`list-feature-${index + 1}`}>
                   <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
@@ -59,6 +60,18 @@ export default function DeviceSection() {
                 </li>
               ))}
             </ul>
+
+            <Button
+              asChild
+              size="lg"
+              className="bg-[#F14635] hover:bg-[#d93c2c] text-white w-full sm:w-auto"
+              data-testid="button-device-kaspi"
+            >
+              <a href="https://kaspi.kz/shop/p/wanway-gs900-gps-gsm-123295185/?m=12144008&ms=true" target="_blank" rel="noopener noreferrer">
+                <ShoppingCart className="w-5 h-5 mr-2" />
+                {t('КУПИТЬ НА KASPI', 'KASPI-ДЕН САТЫП АЛУ')}
+              </a>
+            </Button>
           </Card>
         </div>
       </div>
