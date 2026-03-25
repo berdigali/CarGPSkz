@@ -1,5 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Instagram, Linkedin } from 'lucide-react';
+import { Instagram, Linkedin, ShoppingCart } from 'lucide-react';
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -76,6 +76,15 @@ export default function Footer() {
               aria-label="LinkedIn"
             >
               <Linkedin className="w-5 h-5" />
+            </a>
+            <a
+              href="https://kaspi.kz/shop/p/wanway-gs900-gps-gsm-123295185/?m=12144008&ms=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-[#F14635] transition-colors"
+              aria-label="Kaspi"
+            >
+              <ShoppingCart className="w-5 h-5" />
             </a>
           </div>
           <p data-testid="text-copyright">
